@@ -1,0 +1,12 @@
+{
+  "name" : "Package Name",
+  "email" : "user@email.com",
+  "slug" : "Package Slug",
+  "description" : "Package description",
+  "author" : "Author Name",
+  "maintainer" : "Maintainer Name",
+  "institute" : "Ontario Institute for Cancer Research",
+  "year" : "2021",
+  "version" : "0.1",
+  "github" : "simpsonlab"
+}
