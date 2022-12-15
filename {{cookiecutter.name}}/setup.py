@@ -3,19 +3,21 @@ Setup.py file for the {{cookiecutter.slug}} package.
 '''
 import setuptools
 
+from {{ cookiecutter.name }} import __version__
+
 with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name='{{ cookiecutter.slug }}',
-    version='{{ cookiecutter.version }}',
+    version=__version__,
     author='{{ cookiecutter.author }}',
     author_email='{{ cookiecutter.email }}',
     maintainer='{{ cookiecutter.maintainer }}',
     description='{{ cookiecutter.description }}',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    python_requires='>=3.7'
+    python_requires='>=3.7',
     url='https://github.com/{{ cookiecutter.github }}/{{ cookiecutter.slug }}',
     packages=setuptools.find_packages(),
     license='MIT',
@@ -29,7 +31,6 @@ setuptools.setup(
         'Operating System :: OS Independent',
     ],
     # uncomment to add executable scripts to a location within PATH
-    #scripts=[''],
     #entry_points={
         #'console_scripts': [
             #'{{ cookiecutter.slug }}=:main'
